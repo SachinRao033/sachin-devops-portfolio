@@ -291,7 +291,7 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export const certifications = [
-  { name: "AWS Certified Cloud Practitioner", link : "https://cp.certmetrics.com/amazon/en/public/verify/credential/d62c34629b154a0a9f86ce12b56ce603" , issuer: "Amazon Web Services", period: "Jul 2026 — Jul 2029", current: true },
+  { name: "AWS Certified Cloud Practitioner", href :"https://cp.certmetrics.com/amazon/en/public/verify/credential/d62c34629b154a0a9f86ce12b56ce603" , issuer: "Amazon Web Services", period: "Jul 2026 — Jul 2029", current: true },
   { name: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate", issuer: "Oracle", period: "Feb 2026 — Feb 2028", current: true },
   { name: "AWS Solutions Architecture Job Simulation", issuer: "Forage", period: "Mar 2025" },
   { name: "DevOps", issuer: "HCL GUVI", period: "Oct 2023" },
