@@ -63,7 +63,7 @@ export const experience: Experience[] = [
     role: "DevOps Engineer Intern",
     type: "Internship",
     location: "Remote — Pune",
-    period: "Jan 2025 — Jul 2026",
+    period: "Jan 2025 — Jun 2025",
     stack: ["Jenkins", "GitLab CI", "Azure DevOps", "Jira", "CloudFormation"],
     bullets: [
       "Managed Jira Server to track tasks, bugs and user stories — improving team efficiency by 15% and cutting project delays by 10% through streamlined workflows.",
@@ -79,7 +79,7 @@ export const experience: Experience[] = [
     role: "Cloud Computing Intern",
     type: "Internship",
     location: "Bangalore",
-    period: "Oct 2024 — Dec 2024",
+    period: "Aug 2024 — Mar 2025",
     stack: ["AWS EC2", "S3", "Lambda", "Cost optimization"],
     bullets: [
       "Gained hands-on experience with AWS cloud solutions including design, deployment and optimisation of scalable services using EC2, S3 and Lambda.",
