@@ -57,7 +57,7 @@ export function buildResumeText() {
 }
 
 export const resumePdfUrl = "/Sachin_Rao_Resume.pdf";
-export const resumePdfFileName = "Sachin_Rao_Resume.pdf";
+export const resumePdfFileName = "Sachin Rao - DevOps Resume.pdf";
 
 export function downloadResume() {
   const link = document.createElement("a");
