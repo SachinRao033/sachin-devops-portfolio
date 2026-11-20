@@ -76,7 +76,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.16 }}
               className="mt-4 font-mono text-sm tracking-[0.02em] text-aws sm:text-base"
             >
-              {"// DevOps Engineer · AWS · CI/CD · Infrastructure as Code"}
+              {"Building Reliable Infrastructure. Automating Deployments. Delivering Cloud Solutions."}
             </motion.p>
 
             <motion.p
@@ -85,8 +85,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.22 }}
               className="mt-6 max-w-xl text-[15px] leading-7 text-slate-400"
             >
-              I design, deploy and manage cloud infrastructure on AWS — automating delivery with Jenkins,
-              Docker and Terraform, and running workloads that stay reliable, secure and cost-aware.
+              DevOps Engineer focused on AWS cloud infrastructure, Linux administration, Docker, CI/CD automation, and application deployment.
             </motion.p>
 
             <motion.div
@@ -149,7 +148,7 @@ export default function Hero() {
                   className="aspect-square w-full object-cover grayscale transition duration-500 hover:grayscale-0"
                 />
                 <span className="absolute -bottom-2 left-2 bg-aws px-2 py-0.5 font-mono text-[9.5px] font-bold tracking-[0.14em] text-ink uppercase">
-                  {profile.role}
+                  {profile.roleBadge}
                 </span>
               </div>
               <div className="grid flex-1 grid-cols-2 gap-2 pb-2">

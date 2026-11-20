@@ -20,6 +20,7 @@ export default function Contact() {
     { icon: Phone, label: "Phone", value: profile.phone, href: `tel:${profile.phoneHref}` },
     { icon: Link2, label: "LinkedIn", value: profile.linkedinLabel, href: profile.linkedin },
     { icon: GitBranch, label: "GitHub", value: profile.githubLabel, href: profile.github },
+    { icon: Link2, label: "Portfolio", value: "v0-sachin-devops-portfolio-v2.vercel.app", href: profile.portfolio },
   ];
 
   return (
@@ -62,7 +63,7 @@ export default function Contact() {
           </button>
         </div>
 
-        <div className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-px border border-line bg-line sm:grid-cols-2 lg:grid-cols-5">
           {channels.map(({ icon: Icon, label, value, href }) => (
             <a
               key={label}

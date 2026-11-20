@@ -23,7 +23,7 @@ export default function Skills() {
         <div className="section-head">
           <span className="kicker">04 / Skills</span>
           <span className="font-mono text-[10.5px] tracking-[0.16em] text-slate-600 uppercase">
-            Tools I use weekly
+            Practical experience & foundational knowledge
           </span>
         </div>
 
@@ -45,15 +45,7 @@ export default function Skills() {
                     <p className={`mt-3 text-[13.5px] font-semibold ${isActive ? "text-white" : "text-slate-300"}`}>
                       {g.label}
                     </p>
-                    <div className="mt-3 h-[3px] w-full bg-line">
-                      <motion.div
-                        className="h-full bg-aws"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${g.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                      />
-                    </div>
+
                   </button>
                 );
               })}
@@ -66,7 +58,7 @@ export default function Skills() {
                 <Icon size={16} className="text-aws" />
                 <span className="font-mono text-[11px] tracking-[0.16em] text-white uppercase">{group.label}</span>
               </span>
-              <span className="font-mono text-[11px] text-aws">{group.level}%</span>
+              <span className="font-mono text-[11px] text-aws">{group.experience}</span>
             </div>
             <AnimatePresence mode="wait">
               <motion.div

@@ -20,17 +20,15 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="text-[clamp(1.9rem,4.6vw,3.4rem)] leading-[1.06] font-bold tracking-[-0.035em] text-white"
           >
-            I keep releases boring, environments consistent, and
-            <span className="text-aws"> infrastructure written down as code.</span>
+            DevOps engineering across AWS, Linux, Docker, CI/CD, and application deployment.
           </motion.h2>
 
-          <div className="space-y-6">
-            <p className="text-[15px] leading-7 text-slate-400">{profile.summary}</p>
-            <p className="text-[15px] leading-7 text-slate-400">
-              Based in {profile.location}, I have moved from manual QA through cloud computing into DevOps
-              engineering — which means I care about the whole path a change takes: the commit, the pipeline,
-              the container, the network path, and the dashboard that tells you it worked.
-            </p>
+          <div className="space-y-5">
+            {profile.about.map((paragraph) => (
+              <p key={paragraph} className="text-[15px] leading-7 text-slate-400">
+                {paragraph}
+              </p>
+            ))}
           </div>
         </div>
 
