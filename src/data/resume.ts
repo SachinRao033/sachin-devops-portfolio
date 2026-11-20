@@ -44,8 +44,8 @@ export const experience: Experience[] = [
     role: "DevOps Engineer",
     type: "Full-time",
     location: "Bangalore, Karnataka",
-    period: "Jan 2026 — Present",
-    current: true,
+    period: "Jan 2026 — Sep 2026",
+    current: false,
     stack: ["EC2", "VPC", "IAM", "S3", "RDS", "Route 53", "ALB", "Auto Scaling", "Jenkins", "Docker"],
     bullets: [
       "Designed and managed scalable AWS infrastructure using EC2, VPC, IAM, S3, RDS, Route 53, ALB and Auto Scaling.",
@@ -292,6 +292,7 @@ export const skillGroups: SkillGroup[] = [
 
 export const certifications = [
   { name: "AWS Certified Cloud Practitioner", issuer: "Amazon Web Services", period: "Jul 2026 — Jul 2029", current: true },
+  { name: "AWS Certified Solutions Architect", issuer: "Amazon Web Services", period: "In progress", current: true },
   { name: "Oracle Cloud Infrastructure 2025 Certified Foundations Associate", issuer: "Oracle", period: "Feb 2026 — Feb 2028", current: true },
   { name: "AWS Solutions Architecture Job Simulation", issuer: "Forage", period: "Mar 2025" },
   { name: "DevOps", issuer: "HCL GUVI", period: "Oct 2023" },
