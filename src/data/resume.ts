@@ -13,7 +13,6 @@ export const profile = {
   linkedinLabel: "linkedin.com/in/dsachinrao",
   github: "https://github.com/SachinRao033",
   githubLabel: "github.com/SachinRao033",
-  portfolio: "https://v0-sachin-devops-portfolio-v2.vercel.app",
   portrait: "/sachin-portrait.jpg",
   summary:
     "DevOps Engineer focused on AWS cloud infrastructure, Linux administration, Docker, CI/CD automation, and application deployment.",
