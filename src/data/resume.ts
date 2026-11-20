@@ -48,7 +48,7 @@ export const experience: Experience[] = [
   {
     id: "stackly",
     company: "Stackly",
-    role: "DevOps Engineer Trainee",
+    role: "DevOps Engineer",
     type: "Full-time",
     location: "Bangalore, Karnataka",
     period: "Jan 2026 — Sep 2026",
@@ -67,7 +67,7 @@ export const experience: Experience[] = [
   {
     id: "blue-planet",
     company: "Blue Planet Infosolutions Pvt. Ltd.",
-    role: "Junior DevOps Engineer Intern",
+    role: "Junior DevOps Engineer Trainee",
     type: "Internship",
     location: "Remote — Pune",
     period: "Jan 2025 — Jun 2025",
