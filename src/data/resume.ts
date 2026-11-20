@@ -185,45 +185,6 @@ export const projects: Project[] = [
     paper: "An Intelligent Vehicle Breakdown Assistance Management Services",
     workflow: ["Report vehicle breakdown", "Capture GPS location", "Find nearby roadside assistance", "Coordinate service response"],
   },
-  {
-    id: "api-optimizer",
-    index: "04",
-    name: "API Optimizer AI",
-    kind: "DevOps Deployment",
-    year: "2026",
-    headline: "A containerized full-stack platform deployed to AWS EC2.",
-    description:
-      "Containerized a React and FastAPI telemetry platform with MySQL and an Nginx reverse proxy. GitHub Actions runs backend tests, builds the frontend and Docker images, and deploys changes to AWS EC2 over SSH.",
-    highlights: [
-      "GitHub Actions validates backend tests, frontend builds, and Docker Compose image builds.",
-      "Docker Compose orchestrates the application services and MySQL database.",
-      "Nginx serves the React application and reverse-proxies API requests.",
-      "A successful push to the main branch triggers deployment to AWS EC2 over SSH.",
-    ],
-    services: ["React", "FastAPI", "MySQL", "Docker Compose", "Nginx", "GitHub Actions", "AWS EC2"],
-    accent: "#a78bfa",
-    link: "https://github.com/SachinRao033/api-optimizer-ai",
-    workflow: ["Push to main", "GitHub Actions tests and builds", "Deploy over SSH to AWS EC2", "Run with Docker Compose and Nginx"],
-  },
-  {
-    id: "koya-clinic",
-    index: "05",
-    name: "Koya Clinic Booking",
-    kind: "DevOps Deployment",
-    year: "2026",
-    headline: "Jenkins pipeline for a Docker Compose booking application.",
-    description:
-      "Built a FastAPI booking API with a React interface and automated its Docker Compose deployment through Jenkins. The pipeline installs test dependencies, runs pytest, validates the Compose configuration, builds and starts the containers, then checks the API endpoints.",
-    highlights: [
-      "Jenkins runs the Python test suite and validates Docker Compose configuration.",
-      "Docker Compose builds and starts the FastAPI and React application containers.",
-      "Pipeline verifies the deployed API using its documentation and booking endpoints.",
-    ],
-    services: ["FastAPI", "React", "Docker", "Docker Compose", "Jenkins", "pytest", "SQLite / PostgreSQL"],
-    accent: "#38bdf8",
-    link: "https://github.com/SachinRao033/koya-clinic-booking---web-application--deploy-by-using-docker-and-jenkins",
-    workflow: ["Commit changes", "Jenkins runs tests and Compose validation", "Build and start Docker containers", "Verify API endpoints"],
-  },
 ];
 
 export type SkillGroup = {
