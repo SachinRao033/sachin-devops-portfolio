@@ -145,7 +145,7 @@ export default function Hero() {
                 <img
                   src={profile.portrait}
                   alt={`${profile.name} — ${profile.role}`}
-                  className="aspect-square w-full object-cover grayscale transition duration-500 hover:grayscale-0"
+                  className="portrait-photo aspect-square w-full object-cover transition duration-500"
                 />
                 <span className="absolute -bottom-2 left-2 bg-aws px-2 py-0.5 font-mono text-[9.5px] font-bold tracking-[0.14em] text-ink uppercase">
                   {profile.roleBadge}
