@@ -58,7 +58,7 @@ export default function Experience() {
                   <span className="font-mono text-[11px] leading-5 tracking-[0.08em] text-slate-500 uppercase">
                     {job.period}
                   </span>
-                  <span className="col-start-2 row-start-2 sm:col-start-2 sm:row-start-1">
+                  <span className="col-start-1 row-start-2 min-w-0 sm:col-start-2 sm:row-start-1">
                     <span className="flex flex-wrap items-center gap-3">
                       <span className="text-xl font-semibold tracking-tight text-white sm:text-2xl">
                         {job.role}
