@@ -26,8 +26,8 @@ export const profile = {
 
 export const stats = [
   { value: "1+", label: "Years Experience" },
-  { value: "14", label: "AWS services listed" },
-  { value: "4", label: "Professional roles" },
+  { value: "17+", label: "AWS services" },
+  { value: "4", label: "Organizations" },
   { value: "8.04", label: "B.Tech GPA / 10" },
 ];
 

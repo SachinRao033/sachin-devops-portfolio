@@ -153,9 +153,9 @@ export default function Hero() {
               </div>
               <div className="grid flex-1 grid-cols-2 gap-2 pb-2">
                 {stats.map((s) => (
-                  <div key={s.label} className="border border-line bg-panel/70 px-3 py-3">
+                  <div key={s.label} className="min-w-0 border border-line bg-panel/70 px-3 py-3">
                     <p className="font-mono text-xl font-bold text-white sm:text-2xl">{s.value}</p>
-                    <p className="mt-1 text-[10.5px] leading-tight text-slate-500">{s.label}</p>
+                    <p className="mt-1 break-words text-[10.5px] leading-tight text-slate-500">{s.label}</p>
                   </div>
                 ))}
               </div>
