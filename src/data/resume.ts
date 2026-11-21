@@ -210,7 +210,7 @@ export const skillGroups: SkillGroup[] = [
     icon: "cloud",
     blurb: "Core AWS infrastructure experience and familiarity with additional AWS services.",
     experience: "Practical experience",
-    skills: ["EC2", "S3", "VPC", "IAM", "RDS", "ALB", "Auto Scaling", "Route 53", "CloudWatch", "Lambda", "ECS", "EKS", "API Gateway", "CloudFront"],
+    skills: ["EC2", "S3", "VPC", "IAM", "RDS", "ALB", "Auto Scaling", "Route 53", "CloudWatch", "Lambda", "ECS", "EKS", "API Gateway", "CloudFront", "Elastic Beanstalk", "SNS", "SQS"],
   },
   {
     id: "devops-cicd",
