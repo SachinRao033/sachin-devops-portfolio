@@ -5,8 +5,8 @@ import { projects } from "../data/resume";
 
 function ArchitectureDiagram({ services, accent }: { services: string[]; accent: string }) {
   const layers = [
-    { name: "Route 53 · CloudFront", tier: "Edge / Presentation" },
-    { name: "ALB · Auto Scaling · EC2 / ECS", tier: "Application / Logic" },
+    { name: "Route 53 · Application Load Balancer", tier: "Presentation" },
+    { name: "Auto Scaling · EC2", tier: "Application" },
     { name: "RDS · S3 · VPC subnets", tier: "Data / Storage" },
   ];
 
@@ -39,6 +39,29 @@ function ArchitectureDiagram({ services, accent }: { services: string[]; accent:
         {services.map((s) => (
           <span key={s} className="font-mono text-[10px] text-slate-500">
             {s} <span className="text-slate-700">/</span>
+          </span>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function ProjectWorkflow({ steps, services, accent, title }: { steps: string[]; services: string[]; accent: string; title: string }) {
+  return (
+    <div className="space-y-2 border border-line bg-[#080c13] p-4 sm:p-5">
+      <p className="mb-3 font-mono text-[10px] tracking-[0.18em] text-slate-600 uppercase">{title}</p>
+      <ol className="space-y-2">
+        {steps.map((step, index) => (
+          <li key={step} className="flex items-center gap-3 border px-3 py-3" style={{ borderColor: `${accent}55`, background: `${accent}0d` }}>
+            <span className="font-mono text-[10px]" style={{ color: accent }}>{String(index + 1).padStart(2, "0")}</span>
+            <span className="font-mono text-[11px] leading-5 text-slate-300 sm:text-[12px]">{step}</span>
+          </li>
+        ))}
+      </ol>
+      <div className="mt-4 flex flex-wrap gap-1.5 border-t border-line pt-3">
+        {services.map((service) => (
+          <span key={service} className="font-mono text-[10px] text-slate-500">
+            {service} <span className="text-slate-700">/</span>
           </span>
         ))}
       </div>
@@ -133,7 +156,7 @@ export default function Projects() {
                   )}
 
                   <a
-                    href="https://github.com/SachinRao033"
+                    href={project.link ?? "https://github.com/SachinRao033"}
                     target="_blank"
                     rel="noreferrer"
                     className="mt-7 inline-flex items-center gap-2 border border-line px-4 py-3 font-mono text-[11px] tracking-[0.14em] text-white uppercase transition-colors hover:border-aws hover:text-aws"
@@ -142,7 +165,16 @@ export default function Projects() {
                   </a>
                 </div>
 
-                <ArchitectureDiagram services={project.services} accent={project.accent} />
+                {project.id === "three-tier" ? (
+                  <ArchitectureDiagram services={project.services} accent={project.accent} />
+                ) : (
+                  <ProjectWorkflow
+                    steps={project.workflow ?? []}
+                    services={project.services}
+                    accent={project.accent}
+                    title={project.kind === "DevOps Deployment" ? "Deployment workflow" : "Application workflow"}
+                  />
+                )}
               </motion.article>
             </AnimatePresence>
           </div>

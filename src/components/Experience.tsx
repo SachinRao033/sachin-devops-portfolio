@@ -8,7 +8,7 @@ export default function Experience() {
   const [filter, setFilter] = useState<"all" | "fulltime" | "intern">("all");
 
   const visible = experience.filter((job) =>
-    filter === "all" ? true : filter === "fulltime" ? job.current : job.type === "Internship"
+    filter === "all" ? true : filter === "fulltime" ? job.type === "Full-time" : job.type === "Internship"
   );
 
   return (

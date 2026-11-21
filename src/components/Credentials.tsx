@@ -30,16 +30,18 @@ export default function Credentials() {
                 >
                   <div className="flex items-start justify-between gap-3">
                     <p className="text-[14.5px] leading-6 font-semibold text-white">{cert.name}</p>
-                    {cert.current && (
+                    {(cert.status || cert.current) && (
                       <span className="shrink-0 border border-emerald-500/40 bg-emerald-500/10 px-2 py-0.5 font-mono text-[9px] tracking-[0.14em] text-emerald-400 uppercase">
-                        Active
+                        {cert.status ?? "Active"}
                       </span>
                     )}
                   </div>
                   <p className="mt-2 font-mono text-[11.5px] text-aws">{cert.issuer}</p>
-                  <p className="mt-1 font-mono text-[10.5px] tracking-[0.1em] text-slate-500 uppercase">
-                    {cert.period}
-                  </p>
+                  {cert.period !== cert.status && (
+                    <p className="mt-1 font-mono text-[10.5px] tracking-[0.1em] text-slate-500 uppercase">
+                      {cert.period}
+                    </p>
+                  )}
                 </motion.div>
               ))}
             </div>
@@ -62,7 +64,7 @@ export default function Credentials() {
               <div className="mt-5 flex items-baseline gap-3 border-t border-line pt-5">
                 <span className="font-mono text-3xl font-bold text-aws">{education.gpa.split(" ")[0]}</span>
                 <span className="font-mono text-[10.5px] tracking-[0.14em] text-slate-500 uppercase">
-                  Cumulative GPA
+                  CGPA / 10
                 </span>
               </div>
 
